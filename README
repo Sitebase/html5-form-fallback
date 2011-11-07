@@ -1,0 +1,17 @@
+=== FEATURES ===
+- Add placeholder for older browsers
+- Add autofocus for older browsers
+- Add form validation (email, url, number)
+
+=== HOW TO USE ===
+1. You can style the placeholder in your CSS by styling the class .placeholder
+2. Add invalid class to your CSS
+        .invalid{
+                // style here
+        }
+        Don't add it to the same selector as :invalid because it will not work
+        in IE this way:
+        input:invalid, .invalid{
+                // style here
+        }
+3. Include this script just before the closing body tag.
