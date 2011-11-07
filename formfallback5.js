@@ -26,6 +26,10 @@
  * 3. Include this script just before the closing body tag.
  */
 
+jQuery(document).ready(function($) {
+	
+	console.log('ready');
+	
 // Create input element to do tests
 var input = document.createElement('input');
 
@@ -132,3 +136,5 @@ function is_url(value){
 function is_number(value){
         return (typeof(value) === 'number' || typeof(value) === 'string') && value !== '' && !isNaN(value);
 }
+
+});
