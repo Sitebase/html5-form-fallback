@@ -28,8 +28,6 @@
 
 jQuery(document).ready(function($) {
 	
-	console.log('ready');
-	
 // Create input element to do tests
 var input = document.createElement('input');
 
@@ -76,7 +74,6 @@ $('input,textarea').keyup(function() {
 
 // Validate an element
 function validate(element){
-	console.log('validate');
         var $$ = $(element);
         var validator = element.getAttribute('type'); // Using pure javascript because jQuery always returns text in none HTML5 browsers
         var valid = true;
